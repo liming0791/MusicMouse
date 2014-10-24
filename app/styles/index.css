@@ -1,0 +1,207 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+
+html{
+	background: #fff;
+}
+
+body {
+  margin:0 auto;
+  color: #325050;
+  width: 700px;
+  height:100%;
+  background: #fff;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 70%;
+}
+
+.container{
+  box-shadow: -8px 8px 6px -6px #565656 ; 
+}
+
+.container2{
+  box-shadow: 8px 8px 6px -6px #565656 ; 
+}
+
+header{
+	width:700px;
+	margin-left:0;
+	margin-top:100px;
+}
+
+.header{
+  margin:0;
+  padding-left: 10px;
+  font-size: 20px;
+  height:30px;
+  font-color:#eee;
+  display: relative;
+  border-bottom: solid 1px #eee;
+  z-index: 100;
+}
+
+.header li{
+  margin:0;
+  padding-right:20px;
+  padding-left: 10px;
+  border-right: solid 1px #ddd;
+  height:30px;
+}
+
+.header a{
+  text-decoration: none;
+  color:#ccc;
+  font-family: "微软雅黑","Helvetica","Arial";
+  font-size: 16px;
+}
+
+.header a:hover, .header a:focus{
+  text-decoration: none;
+  color:#aaa;
+}
+
+.header a:visited {
+  text-decoration: none;
+  color:#ccc;
+}
+
+
+.main{
+  display: inline-block;
+}
+
+.footer{
+  margin-top: 50px;
+  border-top: solid 1px #ddd;
+	padding-bottom: 50px;
+	text-align: center;
+  color: #6E4B45;
+  font-size:20px;
+}
+
+h1, h2 {
+  padding: 0 10%;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+h1 {
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+
+h2{
+  border-top: none;
+  color: rgba(255,255,255,0.9);
+  font-size: 1.6em;
+  font-style: italic;
+}
+
+.h2 {
+  border-top: none;
+  color: rgba(255,255,255,0.9);
+  font-size: 1.6em;
+  font-style: italic;
+}
+
+h3 {
+  margin: 2em 0 0 0;
+  color: #3D1E1C;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0.75em 0;
+  line-height: 2;
+}
+
+
+
+.page-wrapper {
+  position: relative;
+  width:700px;
+  margin:auto;
+}
+
+.intro {
+  height: 300px;
+  padding: 20px 0 70px 0;
+
+  background: #2d6360 50% 0 url(../image/intro_back.jpg) no-repeat; /* old IE fallback */
+
+  background-attachment: fixed, fixed, fixed, scroll;
+  background-image: url(../image/contours.png), url(../image/noise.png), url(../image/gridlines.png), url(../image/intro_back.jpg);
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  background-size: auto, auto, auto, cover;
+  text-align: left;
+}
+
+.shelf{
+	margin-top: 60px;
+	padding-left: 70px;
+
+	position: relative;
+	text-align: center;
+}
+
+.shef a{
+  text-decoration: none;
+}
+
+.albums{
+	position: relative;
+}
+
+ul{
+	display: inline;
+	margin: 0;
+}
+
+li{
+	float:left;
+	margin-right:40px; 
+	list-style: none
+}
+
+.cover img{
+	width:150px;
+	height:150px;
+  box-shadow: 0 6px 4px -4px #565656 ;
+}
+
+.bottom{
+	font-family: 'Julius Sans One',"微软雅黑";
+	font-size:14px;
+	color:#999;
+	text-align:center;
+}
+
+.bottom a{
+	color:rgba(28, 65, 74, 1);
+  text-decoration: none;
+}
+
+.about {
+  padding:0 50px 0 50px;
+}
+
+.about h3{
+  font-family: "微软雅黑";
+  font-size:20px;
+  color:#aaa;
+}
+
+.about p{
+  font-family: "微软雅黑";
+  font-size: 16px;
+  color:#aaa;
+}

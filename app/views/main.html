@@ -1,0 +1,21 @@
+<section class="intro">
+		<header >
+			<h1>Your Music, Your World...</h1>
+			<h2>Welcome to the factasy music world</h2>
+		</header>
+</section>
+<div class="page-wrapper">
+<div class="shelf">
+	<nav class="albums">
+		<ul>
+			<li ng-repeat = "category in categorys | filter:query | orderBy:orderProp">
+				<div class="cover">
+					<a href="#/categry/{{category.id}}"><img src={{category.img}}></a>
+				</div>
+				<div class="bottom">
+					<a href="/{{category.id}}">Lana Del Rey Top 50</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</div>

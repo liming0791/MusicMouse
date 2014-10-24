@@ -1,0 +1,172 @@
+
+
+.page-wrapper {
+  position: relative;
+  width:700px;
+  margin:auto;
+}
+
+.intro {
+  height: 300px;
+  padding: 20px 0 70px 0;
+
+  background: #2d6360 50% 0 url(../image/intro_back.jpg) no-repeat; /* old IE fallback */
+
+  background-attachment: fixed, fixed, fixed, scroll;
+  background-image: url(../image/contours.png), url(../image/noise.png), url(../image/gridlines.png), url(../image/intro_back.jpg);
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  background-size: auto, auto, auto, cover;
+  text-align: left;
+}
+
+
+.album-intro{
+  display: inline-block;
+  width:700px;
+  
+  text-align: left;
+
+    background-attachment: fixed, fixed, fixed, scroll;
+  
+  background-position: auto, auto, auto, center;
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  background-size: auto, auto, auto, cover;
+}
+
+
+.album-cover, .song-cover{
+  float:left;
+  margin:60px 50px 0 50px ;
+  height:100%;
+}
+
+.album-cover img,.song-cover img{
+  width: 150px;
+
+}
+
+
+
+.album-intro-content{
+  padding:50px 50px 20px 0;
+  width: 400px;
+  float: right;
+}
+
+.album-intro-content h2{
+  padding-left: 0;
+}
+
+.description{
+  color:rgba(255,255,255,0.6);
+  font-size:12px;
+  font-family: "微软雅黑";
+  font-style: italic;
+}
+
+.song-intro-content{
+  padding:0;
+}
+
+.song-intro-content h2{
+  color:#233;
+}
+
+.song-cover img{
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.lyric{
+  font-size: 16px;
+  text-align: center;
+}
+
+.blur { 
+    position:absolute;
+    z-index:-1;
+    filter: url(../blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+
+.song-list{
+  font-size:16px;
+  display: inline-block;
+  margin:0;
+  width:100%;
+}
+
+.song-list ul{
+  width:100%;
+  padding:0;
+}
+
+.song-list ul li{
+  color:#ddd;
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+  margin:5px 0 0 0;
+  border-bottom: solid 1px #ddd;
+}
+
+.song-list a{
+  text-decoration: none;
+  color: #aaa;
+}
+
+.song-player{
+  color:#ddd;
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+  margin:5px 0 0 0;
+
+  background: url(../image/background.png);
+  background: rgba(0, 0, 0, 1);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(35,35,35,1)), to(rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(35,35,35,1), rgba(0,0,0,1));
+  background: -moz-linear-gradient(top, rgba(35,35,35,1), rgba(0,0,0,1));
+  background: -o-linear-gradient(top, rgba(35,35,35,1), rgba(0,0,0,1));
+  background: -ms-linear-gradient(top, rgba(35,35,35,1), rgba(0,0,0,1));
+  background: linear-gradient(rgba(35,35,35,1), rgba(0,0,0,1));
+}
+
+.index{
+  margin-left: 10px;
+  color:#4190A5;
+  width: 10%;
+  float:left;
+} 
+
+.song-name{
+  float: left;
+  width:50%;
+  height:18px;
+  color:#aaa;
+  overflow: hidden;
+}
+
+.singer{
+  float: left;
+  width:30%;
+}
+
+.song-player ul, .song-player li{
+  width:100%;
+}
+
+.song-player .player {
+  width:100%;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.song-player .player audio{
+  width:80%;
+}

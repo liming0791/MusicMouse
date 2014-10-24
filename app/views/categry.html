@@ -1,0 +1,36 @@
+<div class="body-wrapper">
+	<section class="album-intro" style = "background-image: url(image/contours.png), url(image/noise.png), url(image/gridlines.png), url(image/album{{category.id}}.jpg)">
+		<div class="album-cover">
+			<img src="{{category.img}}">
+		</div>
+		<div class="album-intro-content">	
+			<div >
+				<h2>Album：{{category.name}}</h2>
+				<p><span class = "h2">Detile:</span> <span class="description">{{category.description}}</span></p>	
+			</div>
+		</div>
+	</section>
+	<div class="song-list">
+		<nav class="songs">
+			<ul>
+			
+			<li ng-repeat = "song in songs | filter:query | orderBy:orderProp">		
+			<a href = "#/{{category.id}}/{{song.id}}">
+				<div class="index">				
+					<span>{{song.id}}</span>		
+				</div>  	
+				<div class="song-name">				
+					<span>{{song.name}}</span>			
+				</div>					
+				<div class="singer">						
+					<span>{{song.singer}}</span>					
+				</div>							
+				</a>		
+			</li>		
+				
+				
+			</ul>
+		</nav>
+	</div>
+
+</div>
